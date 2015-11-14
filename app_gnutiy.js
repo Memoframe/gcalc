@@ -161,16 +161,15 @@ angular.module('myApp', [])
 					ctx.fillText("Цоколь: Hx" + tokr + " R" + truetrv , ox * 2 + tx + th, oy + 20 * 3);
 					
 					//Razmery vynos
-					context.translate (0.5);
 					ctx.beginPath();
 					ctx.lineWidth=1;
-					ctx.moveTo ( ox, oy + ty );
-					ctx.lineTo ( ox - 20, oy + ty );
-					ctx.lineTo ( ox - 20, oy );
-					ctx.lineTo ( ox, oy );
-					ctx.lineTo ( ox, oy - 20 );
-					ctx.lineTo ( ox + tx, oy - 20 );
-					ctx.lineTo ( ox + tx, oy );
+					ctx.moveTo ( ox + 0.5, oy + ty + 0.5 );
+					ctx.lineTo ( ox - 20 + 0.5, oy + ty + 0.5 );
+					ctx.lineTo ( ox - 20 +0.5, oy +0.5 );
+					ctx.lineTo ( ox + 0.5, oy + 0.5 );
+					ctx.lineTo ( ox + 0.5, oy - 20 + 0.5 );
+					ctx.lineTo ( ox + 0.5 + tx, oy - 20 + 0.5 );
+					ctx.lineTo ( ox + tx + 0.5, oy + 0.5 );
 					ctx.stroke (); //gabarity tumby
 					
 					ctx.beginPath();
