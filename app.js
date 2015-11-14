@@ -42,7 +42,7 @@ angular.module('myApp', [])
 					var cys = ty - gly - th - zazor - cy;
 					var c1 = Math.round ( Math.sqrt ( Math.pow ( cx, 2 ) + Math.pow ( cys, 2 ) ) );
 					var c2 = Math.round ( Math.sqrt ( Math.pow ( cy, 2 ) + Math.pow ( cxs, 2 ) ) );
-
+					ctx.imageSmoothingEnabled = false;
 					//Otrisovka tumbi
 					ctx.beginPath ( );
 					ctx.moveTo ( ox, oy );
