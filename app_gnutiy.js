@@ -27,8 +27,8 @@ angular.module('myApp', [])
 					ctx.strokeRect(0, 0, canvas.width, canvas.height);
 					
 					//Nachalo koordinat
-					var ox = Math.round(60.5);
-					var oy = Math.round(50.5);
+					var ox = 60;
+					var oy = 50;
 					
 					//Peremennie fasada
 					var zazor = 2;
@@ -161,6 +161,7 @@ angular.module('myApp', [])
 					ctx.fillText("Цоколь: Hx" + tokr + " R" + truetrv , ox * 2 + tx + th, oy + 20 * 3);
 					
 					//Razmery vynos
+					context.translate (0.5);
 					ctx.beginPath();
 					ctx.lineWidth=1;
 					ctx.moveTo ( ox, oy + ty );
@@ -170,7 +171,6 @@ angular.module('myApp', [])
 					ctx.lineTo ( ox, oy - 20 );
 					ctx.lineTo ( ox + tx, oy - 20 );
 					ctx.lineTo ( ox + tx, oy );
-					
 					ctx.stroke (); //gabarity tumby
 					
 					ctx.beginPath();
