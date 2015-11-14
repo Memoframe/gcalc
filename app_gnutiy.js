@@ -27,8 +27,8 @@ angular.module('myApp', [])
 					ctx.strokeRect(0, 0, canvas.width, canvas.height);
 					
 					//Nachalo koordinat
-					var ox = 60;
-					var oy = 50;
+					var ox = 60.5;
+					var oy = 50.5;
 					
 					//Peremennie fasada
 					var zazor = 2;
@@ -61,7 +61,7 @@ angular.module('myApp', [])
 					var truetrn = truetrv + th;
 					var tokr = Math.round ( truetrn * Math.PI / 2 ) + ( ttx - truetrv ) + ( tty - truetrv );	//Dlinna okruzhnosti tsokolya
 					var thorda = Math.round ( Math.sqrt ( Math.pow ( tx - 37, 2 ) + Math.pow ( ty - 37 ) ) ) ;
-					ctx.imageSmoothingEnabled = false;
+					
 					//Otrisovka fasada
 					ctx.beginPath();
 					ctx.moveTo(ox + tx, oy + falsh);
