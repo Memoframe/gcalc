@@ -61,7 +61,7 @@ angular.module('myApp', [])
 					var truetrn = truetrv + th;
 					var tokr = Math.round ( truetrn * Math.PI / 2 ) + ( ttx - truetrv ) + ( tty - truetrv );	//Dlinna okruzhnosti tsokolya
 					var thorda = Math.round ( Math.sqrt ( Math.pow ( tx - 37, 2 ) + Math.pow ( ty - 37 ) ) ) ;
-					
+					ctx.msImageSmoothingEnabled = false;
 					//Otrisovka fasada
 					ctx.beginPath();
 					ctx.moveTo(ox + tx, oy + falsh);
