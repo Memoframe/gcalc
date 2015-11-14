@@ -27,8 +27,8 @@ angular.module('myApp', [])
 					ctx.strokeRect(0, 0, canvas.width, canvas.height);
 					
 					//Nachalo koordinat
-					var ox = 60.5;
-					var oy = 50.5;
+					var ox = Math.round(60.5);
+					var oy = Math.round(50.5);
 					
 					//Peremennie fasada
 					var zazor = 2;
